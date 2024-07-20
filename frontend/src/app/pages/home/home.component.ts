@@ -15,13 +15,13 @@ export class HomeComponent implements OnInit {
   eventService = inject(EventService)
 
   ngOnInit(): void {
-    debugger;
+    // debugger;
     this.getEvents()
   }
 
   getEvents() {
     this.eventService.getAllEvents().subscribe((res: IAPIResponse) => {
-      debugger;
+    //  debugger;
       this.eventList = res.data;
     })
   }

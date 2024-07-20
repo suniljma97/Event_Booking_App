@@ -7,7 +7,7 @@ import { IAPIResponse } from '../model/model';
 })
 export class EventService {
 
-  apiUrl: string = "https://freeapi.miniprojectideas.com/api/EventBooking/"
+  apiUrl: string = "/api/EventBooking/"
 
   constructor(private http: HttpClient) {
 
